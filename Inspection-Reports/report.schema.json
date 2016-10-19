@@ -17,32 +17,31 @@
 			"type": "object",
 			"properties": {
 				"recordType": {
-					"description": "1 character record type",
+					"description": "Record type - 1 place character",
 					"type": "string",
 					"maxLength": 1
 				},
 				"routeSigningPrefix": {
-					"description": "Route Signing Prefix",
+					"description": "Route Signing Prefix - 1 place number",
 					"type": "integer",
 					"maximum": 9
 				},
 				"designatedLevelOfService": {
-					"description": "Designated Level of Service",
+					"description": "Designated Level of Service - 1 place number",
 					"type": "integer",
 					"maximum": 9
 				},
 				"routeNumber": {
-					"description": "Route Number",
+					"description": "Route Number - 5 place character",
 					"type": "string",
 					"maxLength": 5
 				},
 				"directionalSuffix": {
-					"description": "Directional Suffix",
+					"description": "Directional Suffix - 1 place number",
 					"type": "integer",
 					"maximum": 9
 				}
 			}
 		}
-
 	}
 }
