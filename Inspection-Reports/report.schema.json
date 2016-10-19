@@ -1,0 +1,48 @@
+{
+	"title": "Bridge Inspection Schema",
+	"type": "object",
+	"version" : "1.0",
+	"properties": {
+		"stateCode": {
+			"description": "3 digit State Code ",
+			"type": "integer",
+			"maximum": 999
+		},
+		"structureNumber": {
+			"description": "15 character structure number",
+			"type": "string",
+			"maxLength": 15
+		},
+		"inventoryRoute" : {
+			"type": "object",
+			"properties": {
+				"recordType": {
+					"description": "1 character record type",
+					"type": "string",
+					"maxLength": 1
+				},
+				"routeSigningPrefix": {
+					"description": "Route Signing Prefix",
+					"type": "integer",
+					"maximum": 9
+				},
+				"designatedLevelOfService": {
+					"description": "Designated Level of Service",
+					"type": "integer",
+					"maximum": 9
+				},
+				"routeNumber": {
+					"description": "Route Number",
+					"type": "string",
+					"maxLength": 5
+				},
+				"directionalSuffix": {
+					"description": "Directional Suffix",
+					"type": "integer",
+					"maximum": 9
+				}
+			}
+		}
+
+	}
+}

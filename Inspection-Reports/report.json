@@ -1,0 +1,11 @@
+{
+	"stateCode": 456,
+	"structureNumber": "testing",
+	"inventoryRoute": {
+		"recordType": "A",
+		"routeSigningPrefix": 9,
+		"designatedLevelOfService": 9,
+		"routeNumber": "tests",
+		"directionalSuffix": 9
+	}
+}
