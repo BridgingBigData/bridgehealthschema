@@ -1,4 +1,150 @@
 {
-	"version": "0.1"
-	
+	"version" : "",
+	"versionName" : "NBI Record Format",
+	"stateCode" : "",
+	"structureNumber" : "",
+	"inventoryRoute" : {
+		"recordType" : "",
+		"routeSigningPrefix" : "",
+		"designatedLevelOfService" : "",
+		"routeNumber" : "",
+		"directionalSuffix" : ""
+	},
+	"highwayAgencyDistrict" : "",
+	"countyParishCode" : "",
+	"placeCode" : "",
+	"featuresIntersected" : {
+		"featureIntersected" : "",
+		"criticalFacilityIndicator" : ""
+	},
+	"facilityCarriedByStructure" : "",
+	"Location" : "",
+	"inventoryRouteMinVerticalClearance" : "",
+	"kilometerPoint" : "",
+	"baseHighwayNetwork" : "",
+	"inventoryRouteSubroute" : {
+		"lrsInventoryRoute" : "",
+		"subrouteNumber" : ""
+	},
+	"latitude" : "",
+	"longitude" : "",
+	"bypassDetourLength" : "",
+	"toll" : "",
+	"maintenanceResponsibility" : "",
+	"owner" : "",
+	"functionalClassOfInventoryRoute" : "",
+	"yearBuilt" : "",
+	"lanesOnOrUnderStructure" : "",
+	"lanesOnStructure" : "",
+	"averageDailyTraffic" : "",
+	"yearOfAverageDailyTraffic" : "",
+	"designLoad" : "",
+	"approachRoadwayWidth" : "",
+	"bridgeMedian" : "",
+	"skew" : "",
+	"structureFlared" : "",
+	"trafficSafetyFeatures" : {
+		"bridgeRailings" : "",
+		"transitions" : "",
+		"approachGuardRails" : "",
+		"approachGuardRailsEnds" : ""
+	},
+	"historicalSignificance" : "",
+	"navigationControl" : "",
+	"navigationVerticalClearance" : "",
+	"navigationHorizontalClearance" : "",
+	"structureOpenOrPostedOrClosed" : "",
+	"typeOfService" : {
+		"typeOfServiceOnBridge" : "",
+		"typeOfServiceUnderBridge" : ""
+	},
+	"structureTypeMain" : {
+		"kindOfMaterialOrDesign" : "",
+		"typeOfDesignOrConstruction" : ""
+	},
+	"structureTypeApproachSpans" : {
+		"kindOfMaterialOrDesign" : "",
+		"typeOfDesignOrConstruction" : ""
+	},
+	"numberOfSpansInMainUnit" : "",
+	"numberOfApproachSpans" : "",
+	"inventoryRouteTotalHorizontalClearance" : "",
+	"lenghtOfMaximumSpan" : "",
+	"strucureLenght" : "",
+	"curbOrSidewalkWidth" : {
+		"leftCurbOrSidewalkWidth" : "",
+		"rightCurbOrSidewalkWidth" : ""
+	},
+	"bridgeRoadwayWidthCurbToCurb" : "",
+	"deckWidthOutToOut" : "",
+	"minVerticalClearanceOverBridgeRoadway" : "",
+	"minVeritcalUnderclearanceInformation" : {
+		"referenceFeature" : "",
+		"minVeritcalUnderclearance" : ""
+	},
+	"minLateralUnderclearOnRight" : {
+		"referenceFeature" : "",
+		"minLateralUnderclearance": ""
+	},
+	"minLateralUnderclearOnLeft" : "",
+	"deck" : "",
+	"superStructure" : "",
+	"subStructure" : "",
+	"channelOrChannelProtection" : "",
+	"culverts" : "",
+	"methodUsedToDetermineInventoryRating" : "",
+	"inventoryRating" : "",
+	"structuralEvaluation" : "",
+	"deckGeometry" : "",
+	"underclearForVerticalAndHorizontal" : "",
+	"bridgePosting" : "",
+	"waterwayAdequacy" : "",
+	"approachRoadwayAlignment" : "",
+	"typeOfWork" : {
+		"typeOfWorkProposed" : "",
+		"workDoneBy" : ""
+	},
+	"lenghtOfStructureImprovement" : "",
+	"inspectionDate" : "",
+	"designatedInspectionFrequency" : "",
+	"criticalFeatureInspection" : {
+		"fractureCriticalDetails" : "",
+		"underwaterInspection" : "",
+		"otherSpecialInspection" : ""
+	},
+	"criticalFeatureInspectionDates" :{
+		"fractureCriticalDetailsDate" : "",
+		"underwaterInspectionDate" : "",
+		"otherSpecialInspectionDate" : ""
+	},
+	"bridgeImprovementCost" : "",
+	"roadwayImprovementCost" : "",
+	"totalProjectCost" : "",
+	"yearOfImprovementCostEstimate" : "",
+	"borderBridge" : {
+		"neighboringStateCode" : "",
+		"percentResponsibility" : ""
+	},
+	"borderBridgeStructureNumber" : "",
+
+	"deckDetails" : {
+		"deckRating": 1,
+		"deckRatingRemarks": "Text",
+		"wearingSurfaceRating": 1,
+		"wearingSurfaceRatingRemark": "Text",
+		"deckStructuralConditionRating": 1,
+		"deckStructuralConditionRatingRemark": 1,
+		"jointsRating": 1,
+		"jointsRatingRemark": "Text",
+		"drainageRating": 1,
+		"drainageRatingRemark": "Text",
+		"utilitiesRating": 1,
+		"utilitiesRatingRemark": "Text",
+
+	},
+	"superStructure":{
+		"bearings":1
+
+	}
+
 }
