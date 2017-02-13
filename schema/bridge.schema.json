@@ -108,7 +108,8 @@
                 "enum":["public", "private", "research"]
               },
               "reportDate": {
-                "type": "integer"
+                "type": "string",
+                "format": "date-time"
               },
               "deficiencies": {
                 "type": "array",

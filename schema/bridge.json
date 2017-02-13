@@ -18,7 +18,7 @@
 			"inspectionReport": {
 				"formatType": "NBE",
 				"accessLevel": "public",
-				"reportDate": 2016,
+				"reportDate": "2016",
 				"deficiencies": [
 					{
 						"cracks": [
@@ -43,6 +43,14 @@
 						]
 					}
 				]
+			}
+		},
+		{
+			"inspectionReport": {
+				"formatType": "NBI Inspection Report",
+				"accessLevel": "public",
+				"reportDate": "2016",
+				"deficiencies": []
 			}
 		}
 	],
