@@ -1,0 +1,67 @@
+{
+	"bridgeStructureId": "15DIGITUNIQUE#@",
+	"bridgeName": "Bob-Kerry Bridge",
+	"bridgeType": [
+		"Concrete"
+	],
+	"stateCode": 31,
+	"structureNumber": "testing",
+	"inventoryRoute": {
+		"recordType": "A",
+		"routeSigningPrefix": 9,
+		"designatedLevelOfService": 9,
+		"routeNumber": "tests",
+		"directionalSuffix": 9
+	},
+	"brideInspectionReports": [
+		{
+			"inspectionReport": {
+				"formatType": "NBE",
+				"accessLevel": "public",
+				"reportDate": 2016,
+				"deficiencies": [
+					{
+						"cracks": [
+							{
+								"direction": "North",
+								"width": "1",
+								"height": "2",
+								"depth": "3"
+							},
+							{
+								"direction": "West",
+								"width": "1",
+								"height": "2",
+								"depth": "3"
+							},
+							{
+								"direction": "South",
+								"width": "1",
+								"height": "2",
+								"depth": "3"
+							}
+						]
+					}
+				]
+			}
+		}
+	],
+	"loadRating": [
+		{
+			"testedLoad": "10000lb"
+		}
+	],
+	"brideLocation": [
+		{
+			"latitude": "41.265600",
+			"longitude": "-95.922300",
+			"address": {
+				"name": "Bob Kerrey Pedestrian Bridge",
+				"street": "705 Riverfront Dr",
+				"city": "Omaha",
+				"state": "NE",
+				"zip": "68102"
+			}
+		}
+	]
+}

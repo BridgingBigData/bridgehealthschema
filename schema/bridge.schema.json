@@ -1,0 +1,190 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "bridgeStructureId": {
+      "type": "string"
+    },
+    "bridgeName": {
+      "type": "string"
+    },
+    "bridgeLocation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "latitude": {
+            "type": "string"
+          },
+          "longitude": {
+            "type": "string"
+          },
+          "address": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "street": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
+              "zip": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "street",
+              "city",
+              "state",
+              "zip"
+            ]
+          }
+        },
+        "required": [
+          "latitude",
+          "longitude",
+          "address"
+        ]
+      }
+    },
+    "bridgeType": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stateCode": {
+      "type": "integer"
+    },
+    "structureNumber": {
+      "type": "string"
+    },
+    "inventoryRoute": {
+      "type": "object",
+      "properties": {
+        "recordType": {
+          "type": "string"
+        },
+        "routeSigningPrefix": {
+          "type": "integer"
+        },
+        "designatedLevelOfService": {
+          "type": "integer"
+        },
+        "routeNumber": {
+          "type": "string"
+        },
+        "directionalSuffix": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "recordType",
+        "routeSigningPrefix",
+        "designatedLevelOfService",
+        "routeNumber",
+        "directionalSuffix"
+      ]
+    },
+    "brideInspectionReports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "inspectionReport": {
+            "type": "object",
+            "properties": {
+              "formatType": {
+                "type": "string"
+              },
+              "accessLevel": {
+                "enum":["public", "private", "research"]
+              },
+              "reportDate": {
+                "type": "integer"
+              },
+              "deficiencies": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "cracks": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "direction": {
+                            "type": "string"
+                          },
+                          "width": {
+                            "type": "string"
+                          },
+                          "height": {
+                            "type": "string"
+                          },
+                          "depth": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "direction",
+                          "width",
+                          "height",
+                          "depth"
+                        ]
+                      }
+                    }
+                  },
+                  "required": [
+                    "cracks"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "formatType",
+              "accessLevel",
+              "reportDate",
+              "deficiencies"
+            ]
+          }
+        },
+        "required": [
+          "inspectionReport"
+        ]
+      }
+    },
+    "loadRating": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "testedLoad": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "testedLoad"
+        ]
+      }
+    }
+  },
+  "required": [
+    "bridgeStructureId",
+    "bridgeName",
+    "brideLocation",
+    "bridgeType",
+    "stateCode",
+    "structureNumber",
+    "inventoryRoute",
+    "brideInspectionReports",
+    "loadRating"
+  ]
+}

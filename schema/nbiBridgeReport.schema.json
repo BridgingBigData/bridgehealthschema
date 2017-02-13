@@ -1,8 +1,18 @@
 {
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "https://github.com/BridgingBigData/bridgehealthschema/blob/master/Inspection-Reports/report.schema.json#",
 	"title": "Bridge Inspection Schema",
 	"type": "object",
 	"version" : "1.0",
 	"properties": {
+		"id": {
+        "description": "The unique identifier for this bridge inspection",
+        "type": "integer"
+		},
+		"reportYear": {
+				"description": "The year in which the inspection was performed",
+				"type": "integer"
+		},
 		"stateCode": {
 			"description": "3 digit State Code ",
 			"type": "integer",
@@ -43,5 +53,10 @@
 				}
 			}
 		}
-	}
+	},
+	"required": [
+		"id",
+		"stateCode",
+		"structureNumber"
+	]
 }

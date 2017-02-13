@@ -1,5 +1,7 @@
 {
-	"stateCode": 456,
+	"id": 1,
+	"reportYear": 2016,
+	"stateCode": 31,
 	"structureNumber": "testing",
 	"inventoryRoute": {
 		"recordType": "A",
