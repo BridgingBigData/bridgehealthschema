@@ -93,7 +93,7 @@
         "directionalSuffix"
       ]
     },
-    "brideInspectionReports": {
+    "bridgeInspectionReports": {
       "type": "array",
       "items": {
         "type": "object",
