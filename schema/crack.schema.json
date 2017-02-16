@@ -1,0 +1,65 @@
+{
+  "title": "Crack",
+  "description": "Describing the attributes of cracks on bridges",
+  "type": "object",
+  "properties": {
+    "onStructuralMember": {
+      "type": "string",
+      "description": "Structural member on which the crack is present"
+    },
+    "distanceFromClosestStructuralMember": {
+      "type": "number"
+    },
+    "closestStructuralMember": {
+      "type": "string",
+      "description": "The Closest structural member to the crack"
+    },
+    "orientation": {
+      "type": "string",
+      "description": "Orientation of the crack with respect to traffic flow",
+      "enum": [
+        "Transverse",
+        "Longitudinal"
+      ]
+    },
+        "momentRegionType": {
+      "type": "string",
+      "description": "Moment region type in which the crack is located",
+      "enum": [
+        "Positive",
+        "Negative"
+      ]
+    },
+    "widthAverage": {
+      "type": "number",
+      "description": "Width Average of the crack"
+    },
+    "widthMax": {
+      "type": "number",
+      "description": "Width Maximum of the crack"
+    },
+    "pointWidth": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "description": "Width at certain points along the crack"
+    },
+    "length": {
+      "type": "number",
+      "description": "Length of the crack"
+    },
+    "Latitude": {
+      "type": "number",
+      "description": "Location of the crack - Latitude"
+    },
+    "Longitude": {
+      "type": "number",
+      "description": "Location of the crack - Longitude"
+    }
+  },
+  "required": [
+    "onStructuralMember",
+    "orientation"
+  ]
+}
