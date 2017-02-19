@@ -1,4 +1,5 @@
 {
+  "id": "https://bridgingbigdata.github.io/bridgehealthschema/schema/crack"
   "title": "Crack",
   "description": "Describing the attributes of cracks on bridges",
   "type": "object",
