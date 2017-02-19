@@ -4,4 +4,7 @@ This repository is a collection of JSON format schemas for Bridge Structural Hea
 
 # Schemas for Bridge Deficiencies 
 
-[Cracks](http://lbovet.github.io/docson/#https://bridgingbigdata.github.io/bridgehealthschema/schema/crack.schema.json)
+## Cracks
+
+- [Schema](http://lbovet.github.io/docson/#https://bridgingbigdata.github.io/bridgehealthschema/schema/crack.schema.json)
+- [Describe a Crack](https://goo.gl/eHyHc7)
