@@ -22,7 +22,7 @@
         "Longitudinal"
       ]
     },
-        "momentRegionType": {
+    "momentRegionType": {
       "type": "string",
       "description": "Moment region type in which the crack is located",
       "enum": [
@@ -49,17 +49,8 @@
       "type": "number",
       "description": "Length of the crack"
     },
-    "Latitude": {
-      "type": "number",
-      "description": "Location of the crack - Latitude"
-    },
-    "Longitude": {
-      "type": "number",
-      "description": "Location of the crack - Longitude"
+    "geo": {
+      "$ref": "http://json-schema.org/geo"
     }
-  },
-  "required": [
-    "onStructuralMember",
-    "orientation"
-  ]
+  }
 }
