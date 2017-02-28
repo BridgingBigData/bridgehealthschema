@@ -4,7 +4,11 @@
 	"momentRegionType": "Positive",
 	"widthAverage": 0.5,
 	"widthMax": 0.6,
-	"pointWidth": [],
+	"pointWidth": [
+		0.4,
+		0.5,
+		0.6
+	],
 	"length": 10,
 	"geo": {
 		"latitude": 40,
