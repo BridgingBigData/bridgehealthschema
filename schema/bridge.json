@@ -54,12 +54,12 @@
 			}
 		}
 	],
-	"loadRating": [
+	"loadRating": 
 		{
 			"testedLoad": "10000lb"
 		}
-	],
-	"brideLocation": [
+	,
+	"bridgeLocation": 
 		{
 			"latitude": "41.265600",
 			"longitude": "-95.922300",
@@ -71,5 +71,5 @@
 				"zip": "68102"
 			}
 		}
-	]
+	
 }
