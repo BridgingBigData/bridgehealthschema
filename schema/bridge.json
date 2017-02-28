@@ -1,6 +1,19 @@
 {
 	"bridgeStructureId": "15DIGITUNIQUE#@",
 	"bridgeName": "Bob-Kerry Bridge",
+	"bridgeLocation": [
+		{
+			"latitude": "41.265600",
+			"longitude": "-95.922300",
+			"address": {
+				"name": "Bob Kerrey Pedestrian Bridge",
+				"street": "705 Riverfront Dr",
+				"city": "Omaha",
+				"state": "NE",
+				"zip": "68102"
+			}
+		}
+	],
 	"bridgeType": [
 		"Concrete"
 	],
@@ -57,19 +70,6 @@
 	"loadRating": [
 		{
 			"testedLoad": "10000lb"
-		}
-	],
-	"brideLocation": [
-		{
-			"latitude": "41.265600",
-			"longitude": "-95.922300",
-			"address": {
-				"name": "Bob Kerrey Pedestrian Bridge",
-				"street": "705 Riverfront Dr",
-				"city": "Omaha",
-				"state": "NE",
-				"zip": "68102"
-			}
 		}
 	]
 }

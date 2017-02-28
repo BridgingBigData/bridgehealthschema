@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://bridgingbigdata.github.io/bridgehealthschema/schema/crack.schema.json",
+  "title": "Crack",
+  "description": "Attributes of cracks on bridges",
+  "type": "object",
+  "properties": {
+    "onStructuralMember": {
+      "type": "string",
+      "description": "Structural member on which the crack is present"
+    },
+    "orientation": {
+      "type": "string",
+      "description": "Orientation of the crack with respect to traffic flow",
+      "enum": [
+        "Transverse",
+        "Longitudinal"
+      ]
+    },
+    "momentRegionType": {
+      "type": "string",
+      "description": "Moment region type in which the crack is located",
+      "enum": [
+        "Positive",
+        "Negative"
+      ]
+    },
+    "widthAverage": {
+      "type": "number",
+      "description": "Width Average of the crack in inches"
+    },
+    "widthMax": {
+      "type": "number",
+      "description": "Width Maximum of the crack in inches"
+    },
+    "pointWidth": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "description": "Width at certain points along the crack in inches"
+    },
+    "length": {
+      "type": "number",
+      "description": "Length of the crack in inches"
+    },
+    "geo": {
+      "description": "Geographical coordinates for crack location",
+      "type": "object",
+      "properties": {
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" }
+      }
+    },
+    "closestElement":
+    {
+      "type": "object",
+      "description": "The closest element to the crack for reference",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the closest element to the crack"
+        },
+        "distanceFromCrack": {
+          "type": "number",
+          "description": "Distance from closest element to the crack in inches"
+          }
+      }
+    }
+  }
+}

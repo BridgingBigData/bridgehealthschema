@@ -1,17 +1,17 @@
 {
-  "onStructuralMember": "Deck",
-  "distanceFromClosestStructuralMember": 5.6,
-  "closestStructuralMember": "Pier 1",
-  "orientation": "Transverse",
-  "momentRegionType": "Negative",
-  "widthAverage": 0.07,
-  "widthMax": 0.1,
-  "pointWidth": [
-    0.07,
-    0.05,
-    0.1
-  ],
-  "length": 5,
-  "Latitude": 40.0006,
-  "Longitude": -95.6798
+	"onStructuralMember": "Deck",
+	"orientation": "Transverse",
+	"momentRegionType": "Positive",
+	"widthAverage": 0.5,
+	"widthMax": 0.6,
+	"pointWidth": [],
+	"length": 10,
+	"geo": {
+		"latitude": 40,
+		"longitude": -95.566
+	},
+	"closestElement": {
+		"name": "Median",
+		"distanceFromCrack": 56
+	}
 }

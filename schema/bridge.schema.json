@@ -180,12 +180,12 @@
   "required": [
     "bridgeStructureId",
     "bridgeName",
-    "brideLocation",
+    "bridgeLocation",
     "bridgeType",
     "stateCode",
     "structureNumber",
     "inventoryRoute",
-    "brideInspectionReports",
+    "bridgeInspectionReports",
     "loadRating"
   ]
 }
