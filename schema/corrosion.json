@@ -1,0 +1,22 @@
+{
+	"corrosionLocation": {
+		"span": "Span 1",
+		"spanElement": {},
+		"elementSpec": {
+			"elementName": "Girder"
+		}
+	},
+	"corrsionType": "Pack Rust",
+	"corrosionCondition": "Heavy Rust",
+	"corrosionOutcome": [],
+	"boundingBoxArea": {},
+	"typeOfCorrosion": "Pack Rust",
+	"condition": "Heavy Rust",
+	"outcome": [],
+	"steelBridgeLocation": {
+		"elementSpec": {
+			"element": "Girder"
+		},
+		"localLocation": []
+	}
+}

@@ -1,0 +1,130 @@
+{
+  "title": "Corrosion",
+  "description": "Describing the attributes of corrosion on bridges",
+  "type": "object",
+  "properties": {
+    "imageURLs": {
+      "type": "array",
+      "description": "URLs for images",
+      "items": {
+        "type": "string",
+        "description": "URL of a image",
+        "format": "uri"
+      }
+    },
+    "corrosionLocation": {
+      "type": "object",
+      "description": "Location of corrosion on a steel bridge",
+      "required": true,
+      "properties": {
+        "span": {
+          "type": "string",
+          "required": true,
+          "description": "Bridge Span"
+        },
+        "spanElement": {
+          "type": "object",
+          "required": true,
+          "properties": {
+            "elementType": {
+              "type": "string",
+              "description": "elements",
+              "enum": [
+                "Girder",
+                "Cross Frame",
+                "Stringers",
+                "Stiffners",
+                "Joints",
+                "Connections"
+              ]
+            },
+            "elementName": {
+              "type": "string",
+              "description": "The name of the element",
+              "required": true
+            },
+            "localLocation": {
+              "type": "array",
+              "description": "Local Location of the corrosion",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "Top-Flange",
+                  "Web",
+                  "Bottom-Flange"
+                ]
+              }
+            },
+            "geo": {
+              "description": "Geographical coordinates for crack location",
+              "type": "object",
+              "properties": {
+                "latitude": { "type": "number" },
+                "longitude": { "type": "number" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "corrsionBoundingBox": {
+      "type": "object",
+      "description": "A bounding box that includes the corrosion",
+      "properties": {
+        "length": {
+          "type": "number",
+          "required": true,
+          "description": "Length of the bounding box"
+        },
+        "width": {
+          "type": "number",
+          "required": true,
+          "description": "Width of the bounding box"
+        }
+      }
+    },
+    "corrosionColor": {
+      "type": "string",
+      "description": "Color of the corrosion"
+    },
+    "corrsionType": {
+      "type": "string",
+      "required": true,
+      "description": "The type of corrosion",
+      "enum": [
+        "Pack Rust",
+        "Surface Rust",
+        "Crevice Corrosion",
+        "Pitting Corrosion",
+        "Galvanic Corrosion"
+      ]
+    },
+    "corrosionCondition": {
+      "type": "string",
+      "required": true,
+      "description": "Condition of the corrosion",
+      "enum": [
+        "Heavy Rust",
+        "Light Rust"
+      ]
+    },
+    "corrosionOutcome": {
+      "type": "array",
+      "required": true,
+      "description": "Possible outcomes of corrosion",
+      "items": {
+        "type": "string",
+        "description": "Possible outcomes",
+        "enum": [
+          "Section Loss",
+          "Debris",
+          "Paint Chipping",
+          "Paint Peeling",
+          "Paint Flaking",
+          "Paint Sealing",
+          "Paint Blistering"
+        ]
+      }
+    }
+  }
+}

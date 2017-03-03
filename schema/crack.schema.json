@@ -5,6 +5,15 @@
   "description": "Attributes of cracks on bridges",
   "type": "object",
   "properties": {
+    "imageURLs": {
+      "type": "array",
+      "description": "URLs for images",
+      "items": {
+        "type": "string",
+        "description": "URL of a image",
+        "format": "uri"
+      }
+    },
     "onStructuralMember": {
       "type": "string",
       "description": "Structural member on which the crack is present"
