@@ -59,8 +59,12 @@
               "description": "Geographical coordinates for crack location",
               "type": "object",
               "properties": {
-                "latitude": { "type": "number" },
-                "longitude": { "type": "number" }
+                "latitude": {
+                  "type": "number"
+                },
+                "longitude": {
+                  "type": "number"
+                }
               }
             }
           }
@@ -91,12 +95,24 @@
       "type": "string",
       "required": true,
       "description": "The type of corrosion",
-      "enum": [
-        "Pack Rust",
-        "Surface Rust",
-        "Crevice Corrosion",
-        "Pitting Corrosion",
-        "Galvanic Corrosion"
+      "oneOf": [
+        {
+          "type": "string",
+          "enum": [
+            "Pack Rust",
+            "Surface Rust",
+            "Crevice Corrosion",
+            "Pitting Corrosion",
+            "Galvanic Corrosion"
+          ],
+          "required": true,
+          "description": "The type of corrosion"
+        },
+        {
+          "type": "string",
+          "required": true,
+          "description": "The type of corrosion"
+        }
       ]
     },
     "corrosionCondition": {

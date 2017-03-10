@@ -1,22 +1,29 @@
 {
+	"imageURLs": [
+		"www.imagesofcorrosion.com"
+	],
 	"corrosionLocation": {
 		"span": "Span 1",
-		"spanElement": {},
-		"elementSpec": {
-			"elementName": "Girder"
+		"spanElement": {
+			"elementType": "Girder",
+			"elementName": "A",
+			"localLocation": [
+				"Web"
+			],
+			"geo": {
+				"latitude": 45,
+				"longitude": -95
+			}
 		}
 	},
+	"corrsionBoundingBox": {
+		"length": 5,
+		"width": 7
+	},
+	"corrosionColor": "Pinkish",
 	"corrsionType": "Pack Rust",
 	"corrosionCondition": "Heavy Rust",
-	"corrosionOutcome": [],
-	"boundingBoxArea": {},
-	"typeOfCorrosion": "Pack Rust",
-	"condition": "Heavy Rust",
-	"outcome": [],
-	"steelBridgeLocation": {
-		"elementSpec": {
-			"element": "Girder"
-		},
-		"localLocation": []
-	}
+	"corrosionOutcome": [
+		"Paint Chipping"
+	]
 }
