@@ -10,4 +10,4 @@ This repository is a collection of JSON format schemas for Bridge Structural Hea
 
 ## Corrosion
 
-- [Corrosion Schema v0.1](http://lbovet.github.io/docson/#https://bridgingbigdata.github.io/bridgehealthschema/schema/corrosion.schema.json)
+- [Corrosion Schema v0.1](https://bridgingbigdata.github.io/bridgehealthschema/schema/corrosion.schema.json)
