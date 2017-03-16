@@ -1,0 +1,66 @@
+{
+  "title": "Spall",
+  "description": "A concrete spall deficiency on bridges",
+  "type": "object",
+  "properties": {
+    "onStructuralMember": {
+      "type": "string",
+      "description": "Structural member on which the deficiency is present"
+    },
+    "betweenStructuralMembers": {
+      "type": "array",
+      "description": "List reference structural members to locate spalls",
+      "items": {
+        "type": "object",
+        "properties": {
+          "firstStructuralMember": {
+            "type": "string",
+            "required": true,
+            "description": "First reference structural member"
+          },
+          "secondStructuralMember": {
+            "type": "string",
+            "description": "Second reference structural member"
+          }
+        }
+      }
+    },
+    "geo": {
+      "description": "Geographical coordinates for crack location",
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    },
+    "boundingBox": {
+      "type": "object",
+      "description": "A bounding box that includes the deficiency",
+      "properties": {
+        "length": {
+          "type": "number",
+          "required": true,
+          "description": "Length of the bounding box"
+        },
+        "width": {
+          "type": "number",
+          "required": true,
+          "description": "Width of the bounding box"
+        },
+        "depth": {
+          "type": "number",
+          "required": true,
+          "description": "Depth of the deficiency in the bounding box"
+        }
+      }
+    },
+    "causeOfTheDeficiency": {
+      "type": "string",
+      "description": "Cause of the deficiency"
+    }
+  }
+}
