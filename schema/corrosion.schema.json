@@ -3,7 +3,7 @@
   "description": "Describing the attributes of corrosion on bridges",
   "type": "object",
   "properties": {
-    "imageURLs": {
+    "mediaURLs": {
       "type": "array",
       "description": "URLs for images",
       "items": {
