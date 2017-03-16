@@ -8,6 +8,10 @@ This repository is a collection of JSON format schemas for Bridge Structural Hea
 
 - [Crack Schema v0.1](http://lbovet.github.io/docson/#https://bridgingbigdata.github.io/bridgehealthschema/schema/crack.schema.json)
 
+## Spalls
+
+- [Spall Schema v0.1](http://lbovet.github.io/docson/#https://bridgingbigdata.github.io/bridgehealthschema/schema/spall.schema.json)
+
 ## Corrosion
 
 - [Corrosion Schema v0.1](https://bridgingbigdata.github.io/bridgehealthschema/schema/corrosion.schema.json)
