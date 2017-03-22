@@ -53,5 +53,11 @@
     {
       "$ref":"deficiencycore.schema.json#/definitions/closestElement"
     }
-  }
+  },
+  "additionalProperties": false,
+  "required":[
+    "onStructuralMember",
+    "orientation",
+    "pointWidth"
+  ]
 }

@@ -1,5 +1,5 @@
 {
-	"imageURLs": [
+	"mediaURLs": [
 		"www.imagesofcorrosion.com"
 	],
 	"corrosionLocation": {
@@ -16,13 +16,13 @@
 			}
 		}
 	},
-	"corrsionBoundingBox": {
+	"boundingBox": {
 		"length": 5,
 		"width": 7
 	},
 	"corrosionColor": "Pinkish",
 	"corrsionType": "Pack Rust",
-	"corrosionCondition": "Heavy Rust",
+	"corrosionCondition": "Heavy",
 	"corrosionOutcome": [
 		"Paint Chipping"
 	]

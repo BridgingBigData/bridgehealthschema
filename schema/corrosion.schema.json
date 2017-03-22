@@ -1,30 +1,23 @@
 {
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://bridgingbigdata.github.io/bridgehealthschema/schema/corrosion.schema.json",
   "title": "Corrosion",
   "description": "Describing the attributes of corrosion on bridges",
   "type": "object",
   "properties": {
     "mediaURLs": {
-      "type": "array",
-      "description": "URLs for images",
-      "items": {
-        "type": "string",
-        "description": "URL of a image",
-        "format": "uri"
-      }
+      "$ref":"deficiencycore.schema.json#/definitions/mediaURLs"
     },
     "corrosionLocation": {
       "type": "object",
       "description": "Location of corrosion on a steel bridge",
-      "required": true,
       "properties": {
         "span": {
           "type": "string",
-          "required": true,
           "description": "Bridge Span"
         },
         "spanElement": {
           "type": "object",
-          "required": true,
           "properties": {
             "elementType": {
               "type": "string",
@@ -40,8 +33,7 @@
             },
             "elementName": {
               "type": "string",
-              "description": "The name of the element",
-              "required": true
+              "description": "The name of the element"
             },
             "localLocation": {
               "type": "array",
@@ -56,36 +48,14 @@
               }
             },
             "geo": {
-              "description": "Geographical coordinates for crack location",
-              "type": "object",
-              "properties": {
-                "latitude": {
-                  "type": "number"
-                },
-                "longitude": {
-                  "type": "number"
-                }
-              }
+              "$ref":"deficiencycore.schema.json#/definitions/geo"
             }
           }
         }
       }
     },
-    "corrsionBoundingBox": {
-      "type": "object",
-      "description": "A bounding box that includes the corrosion",
-      "properties": {
-        "length": {
-          "type": "number",
-          "required": true,
-          "description": "Length of the bounding box"
-        },
-        "width": {
-          "type": "number",
-          "required": true,
-          "description": "Width of the bounding box"
-        }
-      }
+    "boundingBox": {
+      "$ref":"deficiencycore.schema.json#/definitions/boundingBox"
     },
     "corrosionColor": {
       "type": "string",
@@ -93,9 +63,8 @@
     },
     "corrsionType": {
       "type": "string",
-      "required": true,
       "description": "The type of corrosion",
-      "oneOf": [
+      "anyOf": [
         {
           "type": "string",
           "enum": [
@@ -105,28 +74,24 @@
             "Pitting Corrosion",
             "Galvanic Corrosion"
           ],
-          "required": true,
           "description": "The type of corrosion"
         },
         {
           "type": "string",
-          "required": true,
           "description": "The type of corrosion"
         }
       ]
     },
     "corrosionCondition": {
       "type": "string",
-      "required": true,
       "description": "Condition of the corrosion",
       "enum": [
-        "Heavy Rust",
-        "Light Rust"
+        "Heavy",
+        "Light"
       ]
     },
     "corrosionOutcome": {
       "type": "array",
-      "required": true,
       "description": "Possible outcomes of corrosion",
       "items": {
         "type": "string",
@@ -142,5 +107,11 @@
         ]
       }
     }
-  }
+  },
+  "additionalProperties": false,
+  "required":[
+    "corrosionLocation",
+    "corrosionColor",
+    "corrosionCondition"
+  ]
 }

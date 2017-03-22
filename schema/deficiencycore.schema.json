@@ -26,8 +26,29 @@
         "longitude": { "type": "number" }
       }
     },
-    "closestElement":
-    {
+    "boundingBox": {
+      "type": "object",
+      "description": "A bounding box that includes the deficiency",
+      "properties": {
+        "length": {
+          "type": "number",
+          "description": "Length of the bounding box"
+        },
+        "width": {
+          "type": "number",
+          "description": "Width of the bounding box"
+        },
+        "depth": {
+          "type": "number",
+          "description": "depth of the deficiency in the bounding box"
+        }
+      },
+      "required":[
+        "length",
+        "width"
+      ]
+    },
+    "closestElement":{
       "type": "object",
       "description": "The closest element to the deficiency for reference",
       "properties": {
