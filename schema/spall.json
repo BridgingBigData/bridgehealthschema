@@ -9,6 +9,7 @@
 	},
   "boundingBox": {
 		"length": 5,
-		"width": 7
+		"width": 7,
+    "depth":1
 	}
 }

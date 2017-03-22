@@ -1,4 +1,6 @@
 {
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://bridgingbigdata.github.io/bridgehealthschema/schema/spall.schema.json",
   "title": "Spall",
   "description": "A concrete spall deficiency on bridges",
   "type": "object",
