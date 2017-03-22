@@ -68,22 +68,22 @@
   },
   "propterties":{
     "id":{
-      "$ref":"#/definitions/id"
+      "$ref":"label.schema.json#/definitions/id"
     },
     "securityClassification":{
-      "$ref":"#/definitions/securityClassification"
+      "$ref":"label.schema.json#/definitions/securityClassification"
     },
     "license":{
-      "$ref":"#/definitions/license"
+      "$ref":"label.schema.json#/definitions/license"
     },
     "copyrightHolder":{
-      "$ref":"#/definitions/copyrightHolder"
+      "$ref":"label.schema.json#/definitions/copyrightHolder"
     },
     "privacyClassification":{
-      "$ref":"#/definitions/privacyClassification"
+      "$ref":"label.schema.json#/definitions/privacyClassification"
     },
     "provenance":{
-      "$ref":"#/definitions/provenance"
+      "$ref":"label.schema.json#/definitions/provenance"
     }
   },
   "additionalProperties": false,
