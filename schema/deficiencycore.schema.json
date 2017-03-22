@@ -61,6 +61,10 @@
           "description": "Distance from closest element to the deficiency in inches"
           }
       }
+    },
+    "cause": {
+      "type": "string",
+      "description": "Cause of the deficiency"
     }
   }
 }
