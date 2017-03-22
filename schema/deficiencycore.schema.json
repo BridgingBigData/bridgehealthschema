@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://bridgingbigdata.github.io/bridgehealthschema/schema/deficiencycore.schema.json",
+  "title": "Bridge Deficiencies Core Schema",
+  "description": "Collection of schema definitions common to bridge deficiencies",
+  "type": "object",
+  "definitions": {
+    "mediaURLs": {
+      "type": "array",
+      "description": "URLs for media such as images and videos related to the deficiency",
+      "items": {
+        "type": "string",
+        "description": "URL of a media item",
+        "format": "uri"
+      }
+    },
+    "onStructuralMember": {
+      "type": "string",
+      "description": "Structural member on which the deficiency is present"
+    },
+    "geo": {
+      "type": "object",
+      "description": "Geographical coordinates of the deficiency",
+      "properties": {
+        "latitude": { "type": "number" },
+        "longitude": { "type": "number" }
+      }
+    },
+    "closestElement":
+    {
+      "type": "object",
+      "description": "The closest element to the deficiency for reference",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the closest element to the deficiency"
+        },
+        "distanceFromDeficiency": {
+          "type": "number",
+          "description": "Distance from closest element to the deficiency in inches"
+          }
+      }
+    }
+  }
+}
