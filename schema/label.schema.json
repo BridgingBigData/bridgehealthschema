@@ -46,7 +46,7 @@
           "Personally Identifiable Information",
           "Statutory Notification Requirement",
           "Need-to-know Requirement",
-          "No Assertion"
+          "No Classification"
         ]
       }
     },
@@ -67,15 +67,29 @@
     }
   },
   "propterties":{
+    "id":{
+      "$ref":"#/definitions/id"
+    },
     "securityClassification":{
       "$ref":"#/definitions/securityClassification"
     },
     "license":{
       "$ref":"#/definitions/license"
+    },
+    "copyrightHolder":{
+      "$ref":"#/definitions/copyrightHolder"
+    },
+    "privacyClassification":{
+      "$ref":"#/definitions/privacyClassification"
+    },
+    "provenance":{
+      "$ref":"#/definitions/provenance"
     }
   },
   "additionalProperties": false,
   "required":[
-
+    "securityClassification",
+    "privacyClassification",
+    "provenance"
   ]
 }

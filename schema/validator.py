@@ -28,4 +28,13 @@ with open('spall.schema.json') as schema_file:
 
 validate(data,schema)
 
+# Validate label
+with open('label.json') as data_file:
+    data = json.load(data_file)
+
+with open('label.schema.json') as schema_file:
+	schema = json.load(schema_file)
+
+validate(data,schema)
+
 print("Validation complete")

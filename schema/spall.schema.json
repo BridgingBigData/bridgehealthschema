@@ -36,11 +36,15 @@
     },
     "cause": {
       "$ref":"deficiencycore.schema.json#/definitions/cause"
+    },
+    "label":{
+      "$ref":"deficiencycore.schema.json#/definitions/label"
     }
   },
   "additionalProperties": false,
   "required":[
     "onStructuralMember",
-    "boundingBox"
+    "boundingBox",
+    "label"
   ]
 }

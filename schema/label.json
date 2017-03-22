@@ -7,7 +7,7 @@
   "license": "https://opendatacommons.org/licenses/pddl/1.0/",
   "copyrightHolder": "Company A",
   "privacyClassification": [
-    "No Assertion"
+    "No Classification"
   ],
   "provenance": {
     "narrative": "This information was collected by a UAV"

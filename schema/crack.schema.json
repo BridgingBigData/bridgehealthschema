@@ -53,8 +53,7 @@
     {
       "$ref":"deficiencycore.schema.json#/definitions/closestElement"
     },
-    "label":
-    {
+    "label":{
       "$ref":"deficiencycore.schema.json#/definitions/label"
     }
   },

@@ -106,12 +106,16 @@
           "Paint Blistering"
         ]
       }
+    },
+    "label":{
+      "$ref":"deficiencycore.schema.json#/definitions/label"
     }
   },
   "additionalProperties": false,
   "required":[
     "corrosionLocation",
     "corrosionColor",
-    "corrosionCondition"
+    "corrosionCondition",
+    "label"
   ]
 }
