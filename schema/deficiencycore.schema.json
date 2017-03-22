@@ -65,6 +65,10 @@
     "cause": {
       "type": "string",
       "description": "Cause of the deficiency"
+    },
+    "label": {
+      "type": "string",
+      "description": "A security, privacy and ethics label"
     }
   }
 }

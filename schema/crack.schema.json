@@ -52,12 +52,17 @@
     "closestElement":
     {
       "$ref":"deficiencycore.schema.json#/definitions/closestElement"
+    },
+    "label":
+    {
+      "$ref":"deficiencycore.schema.json#/definitions/label"
     }
   },
   "additionalProperties": false,
   "required":[
     "onStructuralMember",
     "orientation",
-    "pointWidth"
+    "pointWidth",
+    "label"
   ]
 }
