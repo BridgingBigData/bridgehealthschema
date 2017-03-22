@@ -4,7 +4,7 @@
   "title": "A security and privacy ethics label for JSON documents",
   "description": "Collection of schema definitions for expressing security, privacy and ethics parameters associated with a JSON document.",
   "type": "object",
-  "definitions": {
+  "properties": {
     "id":{
       "type": "string",
       "title": "Label ID",
@@ -64,26 +64,6 @@
       "required": [
         "narrative"
       ]
-    }
-  },
-  "propterties":{
-    "id":{
-      "$ref":"label.schema.json#/definitions/id"
-    },
-    "securityClassification":{
-      "$ref":"label.schema.json#/definitions/securityClassification"
-    },
-    "license":{
-      "$ref":"label.schema.json#/definitions/license"
-    },
-    "copyrightHolder":{
-      "$ref":"label.schema.json#/definitions/copyrightHolder"
-    },
-    "privacyClassification":{
-      "$ref":"label.schema.json#/definitions/privacyClassification"
-    },
-    "provenance":{
-      "$ref":"label.schema.json#/definitions/provenance"
     }
   },
   "additionalProperties": false,
