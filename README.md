@@ -12,7 +12,7 @@ Attributes that are common and reuseable across bridge deficiency data formats
 _Big Data_ is distributed in storage, computation and transmission. So it is essential that an **information unit** be defined and then **labeled** to determine intellectual proterty rights, secuity and privacy concerns. In a big data system, a JSON document (e.g. a mongodb document) is an appropriate information unit. As such, we define a schema for a label that can be tracked with each JSON document.
 
 - [Label Schema v0.1](https://bridgingbigdata.github.io/bridgehealthschema/schema/label.schema.json)
-- [Sample Label Object](https://bridgingbigdata.github.io/bridgehealthschema/schema/crack.json)
+- [Sample Label Object](https://bridgingbigdata.github.io/bridgehealthschema/schema/label.json)
 
 ## Cracks
 
