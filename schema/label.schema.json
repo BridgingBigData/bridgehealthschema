@@ -4,13 +4,13 @@
   "title": "A security and privacy ethics label for JSON documents",
   "description": "Collection of schema definitions for expressing security, privacy and ethics parameters associated with a JSON document.",
   "type": "object",
-  "definitions": {
-    "id":{
+  "properties": {
+    "id": {
       "type": "string",
       "title": "Label ID",
       "description": "A Unique URI that identifies this Label"
     },
-    "securityClassification":{
+    "securityClassification": {
       "type": "array",
       "title": "Security classification",
       "description": "Security Classification of the JSON document",
@@ -25,17 +25,17 @@
         ]
       }
     },
-    "license":{
+    "license": {
       "type": "string",
       "title": "License",
       "description": "A license document that applies to this content, typically indicated by URL."
     },
-    "copyrightHolder":{
+    "copyrightHolder": {
       "type": "string",
       "title": "Copyright holder",
       "description": "The party holding the legal copyright to the JSON document."
     },
-    "privacyClassification":{
+    "privacyClassification": {
       "type": "array",
       "title": "Privacy Classification",
       "description": "Privacy Classification of the JSON document",
@@ -59,37 +59,30 @@
           "type": "string",
           "title": "Narrative for the Provenance",
           "description": "Describes the workflow involved in collecting and filtering (or cleaning) the data. This could be a link to someplace that describes the data provenance. Recommended information includes how the data was collected, from where, by whom, and using what applications/scripts/etc. Is not required; is not repeatable. If unknown, unclear or not applicable write No Assertion."
+        },
+        "creators": {
+          "type": "array",
+          "title": "Creators",
+          "description": "Creators of the JSON document.",
+          "items": {
+            "type": "object",
+            "description": "A list of creators",
+            "properties": {
+              "name": {
+                "type": "string",
+                "title": "Name",
+                "description": "Person, organization or device with a role in producing the JSON document. Is required. Is repeatable. Enter as First name Last name. If unknown, unclear or not applicable write No Assertion."
+              },
+              "email": {
+                "type": "string",
+                "title": "Email",
+                "description": "An explanation about the purpose of this instance."
+              }
+            }
+          }
         }
-      },
-      "required": [
-        "narrative"
-      ]
+      }
     }
   },
-  "properties":{
-    "id":{
-      "$ref":"label.schema.json#/definitions/id"
-    },
-    "securityClassification":{
-      "$ref":"label.schema.json#/definitions/securityClassification"
-    },
-    "license":{
-      "$ref":"label.schema.json#/definitions/license"
-    },
-    "copyrightHolder":{
-      "$ref":"label.schema.json#/definitions/copyrightHolder"
-    },
-    "privacyClassification":{
-      "$ref":"label.schema.json#/definitions/privacyClassification"
-    },
-    "provenance":{
-      "$ref":"label.schema.json#/definitions/provenance"
-    }
-  },
-  "additionalProperties": false,
-  "required":[
-    "securityClassification",
-    "privacyClassification",
-    "provenance"
-  ]
+  "additionalProperties": false
 }

@@ -5,6 +5,11 @@
   "description": "Collection of schema definitions common to bridge deficiencies",
   "type": "object",
   "definitions": {
+    "bridgeId": {
+        "type": "string",
+        "description": "A uri that uniquely identifies a bridge structure",
+        "format": "uri"
+    },
     "mediaURLs": {
       "type": "array",
       "description": "URLs for media such as images and videos related to the deficiency",

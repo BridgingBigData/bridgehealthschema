@@ -1,15 +1,21 @@
 {
-  "id":"uri:507f1f77bcf86cd799439011",
-  "securityClassification": [
-    "Public Domain",
-    "Licensed"
-  ],
-  "license": "https://opendatacommons.org/licenses/pddl/1.0/",
-  "copyrightHolder": "Company A",
-  "privacyClassification": [
-    "No Classification"
-  ],
-  "provenance": {
-    "narrative": "This information was collected by a UAV"
-  }
+	"id": "uri:507f1f77bcf86cd799439011",
+	"securityClassification": [
+		"Public Domain",
+		"Licensed"
+	],
+	"license": "https://opendatacommons.org/licenses/pddl/1.0/",
+	"copyrightHolder": "Company A",
+	"privacyClassification": [
+		"No Classification"
+	],
+	"provenance": {
+		"narrative": "This information was collected by a UAV",
+		"creators": [
+			{
+				"name": "Robin Gandhi",
+				"email": "test@test.com"
+			}
+		]
+	}
 }
