@@ -1,7 +1,23 @@
 {
 	"id": "uri:507f1f77bcf86cd799439011",
+	"compartments": [
+		[
+			"cracks",
+			"bridge-01"
+		],
+		[
+			"UAV"
+		]
+	],
+	"sharingRestrictions": [
+		"Intellectual Property",
+		"License Required"
+	],
 	"license": "https://opendatacommons.org/licenses/pddl/1.0/",
 	"copyrightHolder": "Company A",
+	"classification": [
+		"Restricted Data"
+	],
 	"provenance": {
 		"narrative": "This information was collected by a UAV",
 		"creators": [
@@ -10,12 +26,5 @@
 				"email": "test@test.com"
 			}
 		]
-	},
-	"classification": [
-		"Restricted Data"
-	],
-	"sharingRestrictions": [
-		"Intellectual Property",
-		"License Required"
-	]
+	}
 }

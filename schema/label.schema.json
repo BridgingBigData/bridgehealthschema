@@ -10,6 +10,15 @@
       "title": "Label ID",
       "description": "A Unique URI that identifies this Label"
     },
+    "compartments": {
+        "type": "array",
+        "items": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
     "sharingRestrictions": {
       "type": "array",
       "title": "Sharing classification",
