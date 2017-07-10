@@ -7,7 +7,7 @@
   "properties": {
     "deficiencyName": {
       "type": "string",
-      "description": "Name of the Deficiency",
+      "description": "Name of the Deficiency"
     },
     "structureNumber": {
         "type": "string",
