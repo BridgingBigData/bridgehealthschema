@@ -5,6 +5,10 @@
   "description": "Collection of schema definitions common to bridge deficiencies",
   "type": "object",
   "definitions": {
+    "deficiencyName": {
+      "type": "string",
+      "description": "Name of the Deficiency",
+    },
     "structureNumber": {
         "type": "string",
         "description": "A uri that uniquely identifies a bridge structure",
