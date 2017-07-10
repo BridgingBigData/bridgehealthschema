@@ -5,8 +5,23 @@
   "description": "Describing the attributes of corrosion on bridges",
   "type": "object",
   "properties": {
+    "deficiencyName": {
+      "type": "string",
+      "description": "Name of the Deficiency",
+    },
+    "structureNumber": {
+        "type": "string",
+        "description": "A uri that uniquely identifies a bridge structure",
+        "format": "uri"
+    },
     "mediaURLs": {
-      "$ref":"deficiencycore.schema.json#/definitions/mediaURLs"
+      "type": "array",
+      "description": "URLs for media such as images and videos related to the deficiency",
+      "items": {
+        "type": "string",
+        "description": "URL of a media item",
+        "format": "uri"
+      }
     },
     "corrosionLocation": {
       "type": "object",
@@ -48,14 +63,44 @@
               }
             },
             "geo": {
-              "$ref":"deficiencycore.schema.json#/definitions/geo"
+                  "type": "object",
+                  "properties": {
+                      "coordinates": {
+                          "type": "array",
+                          "items": {
+                              "type": "number"
+                          }
+                      },
+                      "type": {
+                          "type": "string"
+                      }
+                  }
             }
           }
         }
       }
     },
     "boundingBox": {
-      "$ref":"deficiencycore.schema.json#/definitions/boundingBox"
+      "type": "object",
+      "description": "A bounding box that includes the deficiency",
+      "properties": {
+        "length": {
+          "type": "number",
+          "description": "Length of the bounding box"
+        },
+        "width": {
+          "type": "number",
+          "description": "Width of the bounding box"
+        },
+        "depth": {
+          "type": "number",
+          "description": "depth of the deficiency in the bounding box"
+        }
+      },
+      "required":[
+        "length",
+        "width"
+      ]
     },
     "corrosionColor": {
       "type": "string",
@@ -107,12 +152,14 @@
         ]
       }
     },
-    "label":{
-      "$ref":"deficiencycore.schema.json#/definitions/label"
+    "label": {
+      "type": "string",
+      "description": "A security, privacy and ethics label"
     }
   },
   "additionalProperties": false,
   "required":[
+    "structureNumber",
     "corrosionLocation",
     "corrosionColor",
     "corrosionCondition",

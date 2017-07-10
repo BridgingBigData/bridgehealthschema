@@ -1,16 +1,21 @@
 {
-	"mediaURLs": [
-		"http://corinthtoday.com/wp-content/uploads/2016/02/bridge-repair.jpg"
-	],
-	"onStructuralMember": "Girder",
-	"geo": {
-		"latitude": 40,
-		"longitude": -95.566
-	},
+  "structureNumber": "C02932339",
+	"deficiencyName" : "Spall 1",
+  "mediaURLs": [
+    "http://corinthtoday.com/wp-content/uploads/2016/02/bridge-repair.jpg"
+  ],
+  "onStructuralMember": "Girder",
+  "geo": {
+    "coordinates": [
+      42.567,
+      92.342
+    ],
+    "type": "Point"
+  },
   "boundingBox": {
-		"length": 5,
-		"width": 7,
-    "depth":1
-	},
-  "label":"uri:507f1f77bcf86cd799439011"
+    "length": 5,
+    "width": 6,
+    "depth": 1
+  },
+  "label": "uri:507f1f77bcf86cd799439011"
 }

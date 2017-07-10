@@ -1,25 +1,30 @@
 {
-	"mediaURLs": [
-		"http://corinthtoday.com/wp-content/uploads/2016/02/bridge-repair.jpg"
-	],
-	"onStructuralMember": "Deck",
-	"orientation": "Transverse",
-	"momentRegionType": "Positive",
-	"widthAverage": 0.5,
-	"widthMax": 0.6,
-	"pointWidth": [
-		0.4,
-		0.5,
-		0.6
-	],
-	"length": 10,
-	"geo": {
-		"latitude": 40,
-		"longitude": -95.566
-	},
-	"closestElement": {
-		"name": "Median",
-		"distanceFromCrack": 56
-	},
-	"label":"uri:507f1f77bcf86cd799439011"
+  "structureNumber": "C02932339",
+	"deficiencyName" : "Crack 1",
+  "mediaURLs": [
+    "http://corinthtoday.com/wp-content/uploads/2016/02/bridge-repair.jpg"
+  ],
+  "onStructuralMember": "Deck",
+  "orientation": "Transverse",
+  "momentRegionType": "Positive",
+  "widthAverage": 0.3,
+  "widthMax": 0.4,
+  "pointWidth": [
+    0.3,
+    0.2,
+    0.4
+  ],
+  "length": 6,
+  "geo": {
+    "coordinates": [
+      42.34,
+      -92.456
+    ],
+    "type": "Point"
+  },
+  "closestElement": {
+    "name": "Median",
+    "distanceFromDeficiency": 56
+  },
+  "label": "uri:507f1f77bcf86cd799439011"
 }

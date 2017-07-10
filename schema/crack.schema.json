@@ -5,11 +5,27 @@
   "description": "Attributes of cracks on bridges",
   "type": "object",
   "properties": {
+    "deficiencyName": {
+      "type": "string",
+      "description": "Name of the Deficiency"
+    },
+    "structureNumber": {
+        "type": "string",
+        "description": "A uri that uniquely identifies a bridge structure",
+        "format": "uri"
+    },
     "mediaURLs": {
-      "$ref":"deficiencycore.schema.json#/definitions/mediaURLs"
+      "type": "array",
+      "description": "URLs for media such as images and videos related to the deficiency",
+      "items": {
+        "type": "string",
+        "description": "URL of a media item",
+        "format": "uri"
+      }
     },
     "onStructuralMember": {
-      "$ref":"deficiencycore.schema.json#/definitions/onStructuralMember"
+      "type": "string",
+      "description": "Structural member on which the deficiency is present"
     },
     "orientation": {
       "type": "string",
@@ -47,18 +63,41 @@
       "description": "Length of the crack in inches"
     },
     "geo": {
-      "$ref":"deficiencycore.schema.json#/definitions/geo"
+          "type": "object",
+          "properties": {
+              "coordinates": {
+                  "type": "array",
+                  "items": {
+                      "type": "number"
+                  }
+              },
+              "type": {
+                  "type": "string"
+              }
+          }
     },
-    "closestElement":
-    {
-      "$ref":"deficiencycore.schema.json#/definitions/closestElement"
+    "closestElement":{
+      "type": "object",
+      "description": "The closest element to the deficiency for reference",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the closest element to the deficiency"
+        },
+        "distanceFromDeficiency": {
+          "type": "number",
+          "description": "Distance from closest element to the deficiency in inches"
+          }
+      }
     },
-    "label":{
-      "$ref":"deficiencycore.schema.json#/definitions/label"
+    "label": {
+      "type": "string",
+      "description": "A security, privacy and ethics label"
     }
   },
   "additionalProperties": false,
   "required":[
+    "structureNumber",
     "onStructuralMember",
     "orientation",
     "pointWidth",

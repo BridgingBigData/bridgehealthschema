@@ -5,7 +5,7 @@
   "description": "Collection of schema definitions common to bridge deficiencies",
   "type": "object",
   "definitions": {
-    "bridgeId": {
+    "structureNumber": {
         "type": "string",
         "description": "A uri that uniquely identifies a bridge structure",
         "format": "uri"
@@ -24,12 +24,18 @@
       "description": "Structural member on which the deficiency is present"
     },
     "geo": {
-      "type": "object",
-      "description": "Geographical coordinates of the deficiency",
-      "properties": {
-        "latitude": { "type": "number" },
-        "longitude": { "type": "number" }
-      }
+          "type": "object",
+          "properties": {
+              "coordinates": {
+                  "type": "array",
+                  "items": {
+                      "type": "number"
+                  }
+              },
+              "type": {
+                  "type": "string"
+              }
+          }
     },
     "boundingBox": {
       "type": "object",

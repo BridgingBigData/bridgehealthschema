@@ -1,30 +1,36 @@
 {
-	"mediaURLs": [
-		"www.imagesofcorrosion.com"
-	],
-	"corrosionLocation": {
-		"span": "Span 1",
-		"spanElement": {
-			"elementType": "Girder",
-			"elementName": "A",
-			"localLocation": [
-				"Web"
-			],
-			"geo": {
-				"latitude": 45,
-				"longitude": -95
-			}
-		}
-	},
-	"boundingBox": {
-		"length": 5,
-		"width": 7
-	},
-	"corrosionColor": "Pinkish",
-	"corrsionType": "Pack Rust",
-	"corrosionCondition": "Heavy",
-	"corrosionOutcome": [
-		"Paint Chipping"
-	],
-	"label":"uri:507f1f77bcf86cd799439011"
+  "structureNumber": "C02932339",
+	"deficiencyName" : "Corrosion 1",
+  "mediaURLs": [
+    "www.imagesofcorrosion.com"
+  ],
+  "corrosionLocation": {
+    "span": "Span 1",
+    "spanElement": {
+      "elementType": "Girder",
+      "elementName": "A",
+      "localLocation": [
+        "Web"
+      ],
+      "geo": {
+        "coordinates": [
+          42.32,
+          -92.383
+        ],
+        "type": "Point"
+      }
+    }
+  },
+  "boundingBox": {
+    "length": 5,
+    "width": 3,
+    "depth": 1
+  },
+  "corrosionColor": "Pinkish",
+  "corrsionType": "Pack Rust",
+  "corrosionCondition": "Heavy",
+  "corrosionOutcome": [
+    "Paint Chipping"
+  ],
+  "label": "uri:507f1f77bcf86cd799439011"
 }
